@@ -70,7 +70,13 @@ function draw() {
 function keyPressed() {
   	if (keyCode ===  UP_ARROW) {
     	Matter.Body.applyForce(bobObject1.body,bobObject1.body.position,{x:-50,y:-45});
-  	}
+	  }
+	  if (keycode === DOWN_ARROW){
+		Matter.Body.applForce(bobObject2.body,bobObject2.body.position,{x:-50,y:-45});
+	}
+	if(keyCode === LEFT_ARROW){
+		Matter.body.applForce(bobObject3.body,bobObject3.body.position,{x:-50,y:-45});
+	}
 }
 
 function drawLine(constraint){
